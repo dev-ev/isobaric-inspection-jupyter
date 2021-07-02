@@ -1,1 +1,1 @@
-# prot_InspectionWF
+# isobaric-inspection-jupyter
