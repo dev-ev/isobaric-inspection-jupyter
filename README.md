@@ -5,7 +5,7 @@ LC-MS proteomic data is complex, many things may go wrong during sample prep, ma
 Mass spectrometry data is publicly available in the [project PXD007647](https://www.ebi.ac.uk/pride/archive/projects/PXD007647) at PRIDE archive. The data consists of 10 *E. coli* samples combined into one isobaric labeling set. Please check the corresponding [publication by Thulin and Andersson](https://journals.asm.org/doi/full/10.1128/AAC.00612-19) for more information about the study.
 
 Raw files have been processed by Proteome Dsicovere 2.4, the results have been exported as tab-delimited text files using the Results Exporter node ("R-friendly headers" on). The output contains the following files:
-```python
+```
 /PD_Out/PXD007647_Reproc_TMT-set-2_8fracs_QuanSpectra.txt
 /PD_Out/PXD007647_Reproc_TMT-set-2_8fracs_SpecializedTraces.txt
 /PD_Out/PXD007647_Reproc_TMT-set-2_8fracs_Proteins.txt
@@ -18,4 +18,7 @@ Raw files have been processed by Proteome Dsicovere 2.4, the results have been e
 /PD_Out/PXD007647_Reproc_TMT-set-2_8fracs_PrSMs.txt
 ```
 
-The notebook has been created in Jupyter Lab 3.0.16 in Python 3.8, and tested in Windows 10 and Ubuntu 20.04. 
+The notebook has been created in Jupyter Lab 3.0.16 in Python 3.8, and tested in Windows 10 and Ubuntu 20.04. Install eventual dependencies using pip:
+```
+pip install jupyterlab numpy pandas matplotlib seaborn scikit-learn
+```
