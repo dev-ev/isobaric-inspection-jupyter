@@ -43,10 +43,8 @@ def variability_groupby(df, ratio_columns, accession_col='Accession',
                           use_peptides='all',shared_keyword='Shared', unique_infocol='Quan Info'):
     if use_peptides == 'unique':
         df = df[~df[unique_infocol].isin((shared_keyword,))].copy()
-    elif use_peptides == 'all':
-        pass
     else:
-        df = None
+        pass
         
     dfN = df[ ([accession_col,] + ratio_columns) ]
     
